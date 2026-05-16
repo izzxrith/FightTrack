@@ -1,6 +1,6 @@
 # 🥊 FightTrack
 
-FightTrack is a modern gym and boxing training tracker built with Flask and Python.  
+FightTrack is a modern gym and boxing training tracker built with PHP and MySQL.
 The application helps users track workouts, boxing sessions, fitness progress and training consistency through a clean dashboard interface.
 
 ---
@@ -8,25 +8,25 @@ The application helps users track workouts, boxing sessions, fitness progress an
 ## ✨ Features
 
 - User authentication system
-- Workout tracking
-- Boxing training tracker
-- Progress dashboard
+- Workout tracking (Add, Edit, Delete)
+- Boxing training tracker (Add, Edit, Delete)
+- Progress dashboard with statistics
 - User profile management
-- Responsive modern UI
+- Responsive modern UI with Bootstrap
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Backend
-- Python
-- Flask
-- SQLite
+- PHP
+- MySQL
+- PDO (Prepared Statements)
 
 ### Frontend
 - HTML
 - CSS
-- Bootstrap
+- Bootstrap 5
 
 ---
 
@@ -38,17 +38,24 @@ I'll develop a lil by lil
 
 ## 📂 Project Structure - soon
 
-<!--
-```bash
-fighttrack/
-│
-├── app.py
-├── templates/
-├── static/
-│   ├── css/
-│   └── js/
-├── models/
-├── routes/
-├── database/
-└── README.md
+<!-- 
+```bash fighttrack/ 
+│ 
+├── db.php 
+├── index.php 
+├── register.php 
+├── login.php 
+├── logout.php 
+├── dashboard.php 
+├── profile.php 
+├── workouts.php 
+├── add_workout.php 
+├── edit_workout.php 
+├── delete_workout.php 
+├── boxing.php 
+├── add_boxing.php 
+├── edit_boxing.php 
+├── delete_boxing.php 
+└── README.md 
+``` 
 -->
