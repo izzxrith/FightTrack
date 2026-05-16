@@ -30,9 +30,9 @@ The application helps users track workouts, boxing sessions, fitness progress an
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots - soon
 
-I'll develop a lil by lil -- soon
+I'll develop a lil by lil
 
 ---
 
