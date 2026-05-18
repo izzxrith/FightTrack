@@ -5,9 +5,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 0; }
-        .feature-card { transition: transform 0.3s; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .feature-card:hover { transform: translateY(-5px); }
+        .hero { 
+            background: linear-gradient(135deg, #1a1a1a 0%, #d32f2f 100%); 
+            color: white; 
+            padding: 80px 0; }
+        .feature-card { 
+            transition: transform 0.3s; 
+            border: none; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+            background: #2c2c2c; 
+            color: white;}
+        .feature-card:hover { 
+            transform: translateY(-5px); 
+            background: #d32f2f; 
+            color: white; }
     </style>
 </head>
 <body>
@@ -34,7 +45,7 @@
 <div class="hero">
     <div class="container text-center">
         <h1 class="display-4"><i class="fas fa-fist-raised"></i> Welcome to FightTrack</h1>
-        <p class="lead">Track your own gym workouts and boxing training in one place</p>
+        <p class="lead">Track Your Own Gym Workouts and Boxing Training in One Place</p>
         <hr>
         <?php if(!isset($_SESSION['user_id'])): ?>
             <a href="register.php" class="btn btn-light btn-lg">Get Started</a>
