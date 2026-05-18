@@ -36,26 +36,22 @@ I'll develop a lil by lil
 
 ---
 
-## 📂 Project Structure - soon
-
-<!-- 
-```bash fighttrack/ 
-│ 
-├── db.php 
-├── index.php 
-├── register.php 
-├── login.php 
-├── logout.php 
-├── dashboard.php 
-├── profile.php 
-├── workouts.php 
-├── add_workout.php 
-├── edit_workout.php 
-├── delete_workout.php 
-├── boxing.php 
-├── add_boxing.php 
-├── edit_boxing.php 
-├── delete_boxing.php 
-└── README.md 
-``` 
--->
+## 📂 Project Structure
+FightTrack/
+├── db.php
+├── index.php
+├── register.php
+├── login.php
+├── logout.php
+├── dashboard.php
+├── profile.php
+├── workouts.php
+├── add_workout.php
+├── edit_workout.php
+├── delete_workout.php
+├── boxing.php
+├── add_boxing.php
+├── edit_boxing.php
+├── delete_boxing.php
+├── sql_query.txt
+└── README.md
