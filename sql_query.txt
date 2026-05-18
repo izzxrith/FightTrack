@@ -1,0 +1,44 @@
+CREATE DATABASE fighttrack_db;
+
+USE fighttrack_db;
+
+-- Users Table
+CREATE TABLE users (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(80) UNIQUE NOT NULL,
+    email VARCHAR(120) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    full_name VARCHAR(100),
+    height FLOAT,
+    weight FLOAT,
+    goals TEXT,
+    boxing_experience VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+    
+-- Workouts Table
+CREATE TABLE workouts (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    exercise_name VARCHAR(100) NOT NULL,
+    sets INT NOT NULL,
+    reps INT NOT NULL,
+    weight FLOAT,
+    workout_date DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- Boxing Sessions Table
+CREATE TABLE boxing_sessions (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    shadowboxing_rounds INT DEFAULT 0,
+    bag_work_rounds INT DEFAULT 0,
+    sparring_rounds INT DEFAULT 0,
+    cardio_minutes INT DEFAULT 0,
+    notes TEXT,
+    session_date DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
