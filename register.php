@@ -11,7 +11,7 @@
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card-shadow">
+            <div class="card shadow">
                 <div class="card-header bg-dark text-white">
                     <h4 class="mb-0"><i class="fas fa-user-plus"></i> Create Account</h4>
                 </div>
@@ -33,7 +33,7 @@
                             <label>Confirm Password</label>
                             <input type="password" class="form-control" name="confirm_password" required>
                         </div>
-                        <button type="submit" class="btn btn-dark w-100">Register</button>
+                        <button type="submit" name="register" class="btn btn-dark w-100">Register</button>
                     </form>
                     <div class="text-center mt-3">
                         <a href="login.php">Already have an account? Login</a>
@@ -66,7 +66,6 @@ if(isset($_POST['register'])){
 ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 </html>

@@ -1,5 +1,4 @@
 <?php include "db.php"; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +17,8 @@
                 </div>
                 <div class="card-body">
                     <form method="POST">
-                        <div class="mb-3"
-                            <label>Username</label>>
+                        <div class="mb-3">
+                            <label>Username</label>
                             <input type="text" name="username" class="form-control" required>
                         </div>
                         <div class="mb-3">
@@ -44,18 +43,20 @@ if(isset($_POST['login'])){
 
     $sql = "SELECT * FROM users WHERE username = :username";
     $stmt = $conn->prepare($sql);
-    $stmt->execute(['username' => $username]);
+    $stmt->execute([':username' => $username]);
     $user = $stmt->fetch();
 
     if($user && password_verify($password, $user['password'])){
-        session_start();
         $_SESSION['user_id'] = $user['id'];
+        $_SESSION['user_name'] = $user['username'];
         header("Location: dashboard.php");
+        exit();
     } else {
-        echo "<script>alert('Invalid username or password!')</script>";
+        echo "<script>alert('Invalid username or password!');</script>";
     }
 }
 ?>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

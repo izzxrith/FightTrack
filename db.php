@@ -14,4 +14,6 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 
-// Connection success !
+session_start();
+
+?>
