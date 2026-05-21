@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-    <!-- Goddamn header -->
+    <!-- open header bruv -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.php">
@@ -39,9 +39,9 @@
             </div>
         </div>
     </nav>
-    <!-- Goddamn close this header -->
+    <!-- close header bruv -->
 
-<!-- This shit bussin hero thangy -->
+<!-- bussin hero thangy -->
 <div class="hero">
     <div class="container text-center">
         <h1 class="display-4"><i class="fas fa-fist-raised"></i> Welcome to FightTrack</h1>
