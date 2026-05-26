@@ -9,7 +9,7 @@ The application helps users track workouts, boxing sessions, fitness progress an
 
 | Main Page | Dashboard |
 |-----------|-----------|
-| ![Main Page](MainPage.png) | ![Dashboard](Dashboard.png) |
+| ![Main Page](images/MainPage.png) | ![Dashboard](images/Dashboard.png) |
 
 ---
 
@@ -41,35 +41,6 @@ The application helps users track workouts, boxing sessions, fitness progress an
 
 ---
 
-## 📂 Project Structure
-FightTrack/
-│
-├── db.php # Database connection
-├── index.php # Landing page
-├── register.php # User registration
-├── login.php # User login
-├── logout.php # User logout
-├── dashboard.php # Main dashboard with stats
-├── profile.php # User profile management
-│
-├── workouts.php # View all workouts
-├── add_workout.php # Add new workout
-├── edit_workout.php # Edit workout
-├── delete_workout.php # Delete workout
-│
-├── boxing.php # View all boxing sessions
-├── add_boxing.php # Add new boxing session
-├── edit_boxing.php # Edit boxing session
-├── delete_boxing.php # Delete boxing session
-│
-├── footer.php # Footer component
-│
-├── Dashboard.png # Dashboard screenshot
-├── MainPage.png # Main page screenshot
-│
-└── README.md
-
----
 
 ## 🚀 How to Run
 
