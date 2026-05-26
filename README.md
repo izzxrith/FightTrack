@@ -109,3 +109,19 @@ The application helps users track workouts, boxing sessions, fitness progress an
 
 5. **Access the application**
    Open browser and go to http://localhost/FightTrack/register.php
+
+---
+
+## 👨‍💻 Author
+
+**Ayet**
+
+---
+
+## ⭐ Show Your Support
+
+If this project helped you, please give it a star on Github !
+
+---
+
+**Built with 🥊 and determination**
