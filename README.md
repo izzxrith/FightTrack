@@ -101,9 +101,10 @@ The application helps users track workouts, boxing sessions, fitness progress an
 4. **Configure database**
    Edit db.php with your database credentials :
    ```bash
-   $database = "fighttrack_db";
-   $username = "root";
-   $password = "";
+   $hostname = "localhost";
+    $database = "fighttrack_db";
+    $username = "root";
+    $password = "";
    ```
 
 5. **Access the application**
