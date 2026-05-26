@@ -38,12 +38,15 @@ $recent_boxing = $stmt->fetchAll();
 </head>
 <body class="bg-light">
 
+<!-- UPDATED NAVBAR WITH HOME LINK -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="dashboard.php"><i class="fas fa-fist-raised"></i> FightTrack</a>
         <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="index.php"><i class="fas fa-home"></i> Home</a>
+            <a class="nav-link" href="dashboard.php"><i class="fas fa-chart-line"></i> Dashboard</a>
             <a class="nav-link" href="workouts.php"><i class="fas fa-dumbbell"></i> Workouts</a>
-            <a class="nav-link" href="boxing.php"><i class="fas fa-fist-raised"></i> Boxing</a>
+            <a class="nav-link" href="boxing.php"><i class="fas fa-boxing-glove"></i> Boxing</a>
             <a class="nav-link" href="profile.php"><i class="fas fa-user"></i> Profile</a>
             <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
         </div>
@@ -129,6 +132,6 @@ $recent_boxing = $stmt->fetchAll();
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
